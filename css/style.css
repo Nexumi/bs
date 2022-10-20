@@ -1,0 +1,76 @@
+body {
+	user-select: none;
+	background-color: black;
+	color: white;
+}
+
+.column {
+	text-align: center;
+	margin: 0px 5px;
+	margin-bottom: 15px;
+	width: calc(33.33% - 10px);
+	float: left;
+}
+
+.extra {
+	clear: left;
+	margin-bottom: 50px;
+}
+
+.extra input {
+	width: auto;
+}
+
+.split {
+	text-align: center;
+	margin: 0px 5px;
+	margin-bottom: 50px;
+	width: calc(33.33% - 10px);
+	float: left;
+}
+
+#share {
+	width: auto;
+}
+
+.results {
+	margin-left: 6px;
+	clear: both;
+}
+
+h1 {
+	margin: 5px 0px;
+}
+
+input {
+	width: calc(100% - 10px);
+	margin:  5px 0px;
+	text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 2.5px;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
