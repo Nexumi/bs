@@ -3,40 +3,34 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="../favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Bill Splitter</title>
 </head>
 <body>
-	<div class="column">
-		<h2>Name</h2>
-	</div>
-	<div class="column">
-		<h2>Price</h2>
-	</div>
-	<div class="column">
-		<h2>Item</h2>
-	</div>
-
-	<div class="split">
-		<h2>Split</h2>
-	</div>
-	<div class="split">
-		<h2>Price</h2>
-	</div>
-	<div class="split">
-		<h2>Exclude</h2>
+	<div class="column_wrapper">
+		<div class="column">
+			<h2>Name</h2>
+		</div>
+		<div class="column">
+			<h2>Price</h2>
+		</div>
+		<div class="column">
+			<h2>Item</h2>
+		</div>
 	</div>
 
 	<div class="extra">
-		<p>Tax: <input type="text"></p>
-		<p>Tip: <input type="text"></p>
+		<h3>Subtotal</h3>
+		<h3>Tax: <input id="tax_dollar" type="button" value="$"><input type="text"><input id="tax_percent" type="button" value="%"></h3>
+		<h3>Total</h3>
+		<h3>Tip: <input id="tip_dollar" type="button" value="$"><input type="text"><input id="tip_percent" type="button" value="%"></h3>
+		<h3>True Total</h3>
 	</div>
 
 	<div class="result"></div>
 
 	<input id="share" type="button" value="Share">
+	<script type="text/javascript" src="js/script.min.js">
 </body>
-<script type="text/javascript" src="js/script.min.js">
 </script>
 </html>
