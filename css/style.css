@@ -3,19 +3,22 @@ body {
 	color: white;
 }
 
-.column_wrapper {
-	display: flex;
-	column-gap: 8px;
-	justify-content: center;
+.row_wrapper {
 }
 
-.column {
+.row {
+	display: flex;
+	justify-content: space-between;
 	text-align: center;
-	flex-grow: 1;
+}
+
+.row h2 {
+	width: calc(100% / 3);
 }
 
 .extra input {
 	width: auto;
+	margin: 0px;
 }
 
 #share {
@@ -36,8 +39,8 @@ h2 {
 }
 
 input {
-	width: calc(100% - 10px);
-	margin:  5px 0px;
+	width: 100%;
+	margin: 5px;
 	text-align: center;
 }
 
