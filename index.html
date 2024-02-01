@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/loading.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
 	<title>Bill Splitter</title>
 </head>
 <body>
@@ -16,13 +17,16 @@
 		</div>
 	</div>
 
-	<input id="file" type="file" accept="image/*">
+	<div>
+		<input id="custom_file" type="button" value="Upload Receipt">
+		<input id="file" class="hidden" type="file" accept="image/*">
+	</div>
 	<div class="extra">
 		<h3>Subtotal: </h3>
-		<h3>Tax: <input id="tax_dollar" type="button" value="$"><input type="text"><input id="tax_percent" type="button" value="%"></h3>
+		<h3>Tax: <input id="tax_dollar" type="button" value="$"><input type="text"><input id="tax_percent" class="hidden" type="button" value="%"></h3>
 		<h3>Tax: </h3>
 		<h3>Total: </h3>
-		<h3>Tip: <input id="tip_dollar" type="button" value="$"><input type="text"><input id="tip_percent" type="button" value="%"></h3>
+		<h3>Tip: <input id="tip_dollar" type="button" value="$"><input type="text"><input id="tip_percent" class="hidden" type="button" value="%"></h3>
 		<h3>Tip: </h3>
 		<h3>True Total: </h3>
 	</div>
@@ -30,7 +34,7 @@
 	<div class="result"></div>
 	<input id="share" type="button" value="Share">
 
-	<div class="lds">
+	<div class="lds hidden">
 		<div class="lds-roller">
 			<div></div>
 			<div></div>
@@ -46,6 +50,6 @@
 	<script src="js/api.min.js"></script>
 	<script src="js/script.min.js"></script>
 
-	<!-- BSv4.0 -->
+	<!-- BSv4.1 -->
 </body>
 </html>
