@@ -18,17 +18,20 @@
 	</div>
 
 	<div>
-		<input id="custom_file" type="button" value="Upload Receipt">
 		<input id="file" class="hidden" type="file" accept="image/*">
+		<input id="custom_file" type="button" value="Upload Receipt">
+		<input id="load_url" type="button" value="Load From URL">
 	</div>
 	<div class="extra">
-		<h3>Subtotal: </h3>
+		<h2>Subtotal: </h2>
+		<h3>Fee: <input id="fee_dollar" type="button" value="$"><input type="text"><input id="fee_percent" class="hidden" type="button" value="%"></h3>
+		<h3>Fee: </h3>
 		<h3>Tax: <input id="tax_dollar" type="button" value="$"><input type="text"><input id="tax_percent" class="hidden" type="button" value="%"></h3>
 		<h3>Tax: </h3>
-		<h3>Total: </h3>
+		<h2>Total: </h2>
 		<h3>Tip: <input id="tip_dollar" type="button" value="$"><input type="text"><input id="tip_percent" class="hidden" type="button" value="%"></h3>
 		<h3>Tip: </h3>
-		<h3>True Total: </h3>
+		<h2>True Total: </h2>
 	</div>
 
 	<div class="result"></div>
@@ -50,6 +53,6 @@
 	<script src="js/api.min.js"></script>
 	<script src="js/script.min.js"></script>
 
-	<!-- BSv5.1 -->
+	<!-- BSv6.0 -->
 </body>
 </html>
