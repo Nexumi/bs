@@ -13,21 +13,12 @@ body > * {
 
 .row {
 	display: flex;
-	justify-content: space-between;
-	text-align: center;
 }
 
-.row h2 {
-	width: calc(100% / 3);
-	margin: 5px 0px;
-}
-
+.row h2,
 .row input[type=text] {
 	width: 100%;
 	margin: 5px;
-}
-
-input[type=text] {
 	text-align: center;
 }
 
