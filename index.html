@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
 	<link rel="stylesheet" type="text/css" href="css/loading.css">
 	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
 	<title>Bill Splitter</title>
@@ -34,7 +35,10 @@
 	</div>
 
 	<div class="result"></div>
-	<input id="share" type="button" value="Share">
+	<div class="popup">
+		<input id="share" type="button" value="Share">
+		<span class="popuptext hide removed" id="myPopup">Copied!</span>
+	</div>
 
 	<div class="lds hidden">
 		<div class="lds-roller">
@@ -52,6 +56,6 @@
 	<script src="js/api.min.js"></script>
 	<script src="js/script.min.js"></script>
 
-	<!-- BSv6.2 -->
+	<!-- BSv6.3 -->
 </body>
 </html>
