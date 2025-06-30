@@ -36,7 +36,6 @@
 			} catch (tobe) {
 				continue;
 			}
-			console.log(get)
 			if (get !== null) {
 				if (param === 'extra') {
 					const inputs = extra.getElementsByTagName('input');
@@ -596,15 +595,15 @@
 
 			// fee, tax, and tip
 			let h5 = document.createElement('h5');
-			h5.innerText = '\u2003\u2003Fee: $' + personFee;
+			h5.innerText = '\u2003\u2003Fee: $' + personFee.toFixed(2);
 			result.appendChild(h5);
 
 			h5 = document.createElement('h5');
-			h5.innerText = '\u2003\u2003Tax: $' + personTax;
+			h5.innerText = '\u2003\u2003Tax: $' + personTax.toFixed(2);
 			result.appendChild(h5);
 
 			h5 = document.createElement('h5');
-			h5.innerText = '\u2003\u2003Tip: $' + personTip;
+			h5.innerText = '\u2003\u2003Tip: $' + personTip.toFixed(2);
 			result.appendChild(h5);
 
 			// item breakdown
