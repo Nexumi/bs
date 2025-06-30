@@ -500,8 +500,7 @@
 		}
 
 		// get total
-		const total = subtotal + fee + tax;
-		const trueTotal = total + tip;
+		const total = subtotal + fee + tax + tip;
 
 		// display Extras
 		const h2 = extra.getElementsByTagName('h2');
@@ -517,13 +516,12 @@
 		} else {
 			h3[3].innerText = 'Tax: $' + tax.toFixed(2);
 		}
-		h2[1].innerText = 'Total: $' + total.toFixed(2);
 		if (tip_mode === '$') {
 			h3[5].innerText = 'Tip: ' + (Number((tip / subtotal * 100).toFixed(2)) || 0) + '%'
 		} else {
 			h3[5].innerText = 'Tip: $' + tip.toFixed(2);
 		}
-		h2[2].innerText = 'True Total: $' + trueTotal.toFixed(2);
+		h2[1].innerText = 'Total: $' + total.toFixed(2);
 	}
 
 	function individualH(peep) {
